@@ -1,0 +1,127 @@
+:root {
+  --primaryColor: #ffdac0;
+  --pink: #e98074;
+  --black: #222;
+  --black2: #555;
+  --black3: #252525;
+  --black4: #000;
+  --black5: #212529;
+  --orange: #eb0028;
+  --white: #fff;
+  --grey: #959595;
+  --grey2: #666;
+  --grey3: #ccc;
+  --yellow: #e9bb74;
+  --blue: #74a3e9;
+}
+
+#home-banner {
+  height: 550px;
+}
+
+#index-banner {
+  border-radius: 0 !important;
+  height: 83vh !important;
+}
+
+.hero__btn, .index_btn {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1.5rem;
+    min-width: 50px;
+    background-color:var(--blue);
+    color: var(--white);
+    cursor: pointer;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+  }
+
+.index_btn {
+  background: var(--yellow);
+}
+
+.index_btn a {
+  text-decoration: none;
+}
+
+.index_btn:hover {
+  transform: translate(0, -5px);
+}
+  
+  .btn_pri {
+    background-color: transparent;
+    color: var(--blue);
+  }
+  
+  .hero__btn:focus {
+    outline: none;
+  }
+
+  .hero__btn:hover {
+    font-weight: 700;
+    transform: translate(0, -10px);
+    box-shadow: 0 0 20px var(--blue);
+    background: var(--blue) !important;
+  }
+
+  #home-name {
+    color: var(--pink);
+    text-shadow: 2px 2px 2px var(--grey2);
+    font-size: 5rem;
+    font-weight: 700;
+    margin: 1rem 0;
+  }
+
+  #home-slogan {
+    font-size: 2rem;
+  }
+
+  #pet-main {
+      float: right;
+      position: relative;
+      height: 450px;
+      border-radius: 30px;
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 80px;
+  }
+
+  .card-service img {
+      width: 220px;
+  }
+
+  .read-more {
+      font-size: 18px;
+  }
+
+  .article-box {
+      background: var(--primaryColor);
+  }
+
+  #ab-img {
+      width: 400px
+  }
+
+  .important-txt {
+      color: var(--pink);
+  }
+
+  h2.title-section {
+      font-size: 40px;
+      color: var(--pink);
+  }
+
+  .title-para p {
+      font-size: 24px;
+  }
+
+  @media only screen and (max-width: 992px) {
+    #pet-main {
+      width:  250px;
+      height: 250px;
+      position: relative;
+      top: 80px;
+      right: 50px;
+    }
+  }

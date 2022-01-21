@@ -1,0 +1,102 @@
+#database {
+    display: flex;
+}
+
+.left-right-arrows {
+    display: none;
+    float: right;
+    position: relative;
+    right: 3rem;
+    padding: 0;
+    padding-bottom: .5rem;
+  }
+  
+  .left-right-arrows svg {
+    padding-left: .3rem;
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .left-right-arrows svg:hover {
+    cursor: pointer;
+  }
+
+h1 {
+    text-shadow: 0 0 10px #fff;
+}
+
+.service-cate, .service-detail {
+    padding-left: 6rem;
+    width: 50%;
+}
+
+table {
+    border: solid 2px #e98074;
+}
+
+ table tr, table th {
+   width: 13rem;
+   color: #4E5AFE;
+}
+
+table tr {
+    text-align: center;
+    color: #222;
+}
+
+.service-cate p {
+    position: relative;
+    right: 6rem;
+}
+
+.service-detail p {
+    position: relative; 
+    right: 6rem;
+}
+
+@media only screen and (max-width: 999px) {
+    #hero {
+      height: 85vh;
+    }
+
+    h2 {
+        padding-bottom: 2rem;
+    }
+
+    p {
+        display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 567px) {
+    #hero {
+        height: 50vh;
+    }
+
+    #database {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-cate, .service-detail {
+        padding: 0;
+    }
+
+    .left-right-arrows {
+        display: inline-block;
+        position: relative;
+        left: .1rem;
+      }
+
+    .service-detail {
+        display: none;
+    }
+
+    .left-right-arrows {
+        float: right;
+        position: relative;
+        left: -4rem;
+        padding: 0;
+        padding-bottom: .5rem;
+      }
+  }

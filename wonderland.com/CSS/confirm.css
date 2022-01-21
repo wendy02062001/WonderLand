@@ -1,0 +1,392 @@
+
+:root {
+    --primaryColor: #ffdac0;
+    --pink: #e98074;
+    --black: #222;
+    --black2: #555;
+    --black3: #252525;
+    --black4: #000;
+    --black5: #212529;
+    --orange: #eb0028;
+    --white: #fff;
+    --grey: #959595;
+    --grey2: #666;
+    --grey3: #ccc;
+    --yellow: #e9bb74;
+    --blue: #74a3e9;
+  }
+  
+
+  /*//////////////////////////////////////////////////////////////////
+  [ RESTYLE TAG ]*/
+  
+  * {
+      margin: 0; 
+      padding: 0; 
+      box-sizing: border-box;
+  }
+  
+  body, html {
+      height: 100%;
+  }
+
+body, html, button, input, p, div, span{
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif !important;
+    color: var(--black);
+  }
+  
+  /*---------------------------------------------*/
+  a {
+    font-size: 20px;
+    line-height: 1.7;
+    color: #666666;
+    margin: 0px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+  }
+  
+  a:focus {
+    outline: none !important;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: var(--blue);
+  }
+  
+  /*---------------------------------------------*/
+  h1,h2,h3,h4,h5,h6 {
+      margin: 0px;
+  }
+  
+  p {
+      font-family: Poppins-Regular;
+      font-size: 25px;
+      line-height: 1.7;
+      color: #666666;
+      margin: 0px;
+  }
+  
+  ul, li {
+      margin: 0px;
+      list-style-type: none;
+  }
+  
+  
+  /*---------------------------------------------*/
+  input {
+      outline: none;
+      border: none;
+  }
+  
+  textarea {
+    outline: none;
+    border: none;
+  }
+  
+  textarea:focus, input:focus {
+    border-color: transparent !important;
+  }
+  
+  input:focus::-webkit-input-placeholder { color:transparent; }
+  input:focus:-moz-placeholder { color:transparent; }
+  input:focus::-moz-placeholder { color:transparent; }
+  input:focus:-ms-input-placeholder { color:transparent; }
+  
+  textarea:focus::-webkit-input-placeholder { color:transparent; }
+  textarea:focus:-moz-placeholder { color:transparent; }
+  textarea:focus::-moz-placeholder { color:transparent; }
+  textarea:focus:-ms-input-placeholder { color:transparent; }
+  
+  input::-webkit-input-placeholder { color: #999999; }
+  input:-moz-placeholder { color: #999999; }
+  input::-moz-placeholder { color: #999999; }
+  input:-ms-input-placeholder { color: #999999; }
+  
+  textarea::-webkit-input-placeholder { color: #999999; }
+  textarea:-moz-placeholder { color: #999999; }
+  textarea::-moz-placeholder { color: #999999; }
+  textarea:-ms-input-placeholder { color: #999999; }
+  
+  /*---------------------------------------------*/
+  button {
+      outline: none !important;
+      border: none;
+      background: transparent;
+  }
+  
+  button:hover {
+      cursor: pointer;
+  }
+  
+  iframe {
+      border: none !important;
+  }
+  
+
+  /*//////////////////////////////////////////////////////////////////
+  [ login ]*/
+  
+  .limiter {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .container-login {
+    width: 100%;  
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: #9053c7;
+    background: -webkit-linear-gradient(-120deg, var(--blue), var(--primaryColor));
+    background: -o-linear-gradient(-120deg, var(--blue), var(--primaryColor));
+    background: -moz-linear-gradient(-120deg, var(--blue), var(--primaryColor));
+    background: linear-gradient(-120deg, var(--blue), var(--primaryColor));
+  }
+  
+  .wrap-login {
+    width: 1200px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+  
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 33px 130px 33px 95px;
+  }
+  
+  /*------------------------------------------------------------------
+  [  ]*/
+  .login-pic {
+    width: 316px;
+  }
+  
+  .login-pic img {
+    max-width: 100%;
+  }
+  
+  .login-pic img {
+      border-radius: 50%;
+  }
+  /*------------------------------------------------------------------
+  [  ]*/
+  .login-form {
+    width: 290px;
+  }
+  
+  .login-form-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--pink);
+    line-height: 1.2;
+    text-align: center;
+  
+    width: 100%;
+    display: block;
+    padding-bottom: 1rem;
+  }
+
+  .php_mess {
+      padding-bottom: 1rem;
+      padding-top: .5rem;
+  }
+
+ 
+  /*---------------------------------------------*/
+  .wrap-input {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 10px;
+  }
+  
+  .input {
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--grey);
+  
+    display: block;
+    width: 100%;
+    background: #e6e6e6;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 30px 0 68px;
+  }
+  
+  
+  /*------------------------------------------------------------------
+  [ Focus ]*/
+  .focus-input {
+    display: block;
+    position: absolute;
+    border-radius: 25px;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 0px 0px;
+    color:var(--pink);
+  }
+  
+  .input:focus + .focus-input {
+    -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+    animation: anim-shadow 0.5s ease-in-out forwards;
+  }
+  
+  @-webkit-keyframes anim-shadow {
+    to {
+      box-shadow: 0px 0px 70px 25px;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes anim-shadow {
+    to {
+      box-shadow: 0px 0px 70px 25px;
+      opacity: 0;
+    }
+  }
+  
+  .symbol-input {
+    font-size: 15px;
+  
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    border-radius: 25px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 35px;
+    pointer-events: none;
+    color: #666666;
+  
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+
+  .input:focus + .focus-input + .symbol-input {
+    color: var(--pink);
+    padding-left: 28px;
+  }
+  
+  /*------------------------------------------------------------------
+  [ Button ]*/
+  .container-login-form-btn {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  
+  .login-form-btn {
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    text-transform: uppercase;
+  
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background: var(--pink);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+  
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  
+  .login-form-btn:hover {
+    background: #333333;
+  }
+  
+  
+  
+  /*------------------------------------------------------------------
+  [ Responsive ]*/
+  
+  
+  
+  @media (max-width: 999px) {
+    .wrap-login {
+      padding: 33px 90px 33px 85px;
+    }
+  
+    .login-pic {
+      width: 35%;
+    }
+  
+    .login-form {
+      width: 50%;
+    }
+
+    .php_mess {
+        padding: 0;
+        padding-left: .5rem;
+    }
+
+    .login-form-btn {
+        width: 70%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .wrap-login {
+      padding: 33px 80px 33px 80px;
+    }
+  
+    .login-pic {
+      display: none;
+    }
+  
+    .login-form {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .wrap-login {
+      padding: 33px 15px 33px 15px;
+    }
+  }
+  
+
+ 

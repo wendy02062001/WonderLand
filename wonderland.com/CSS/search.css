@@ -1,0 +1,62 @@
+:root {
+    --primaryColor: #ffdac0;
+    --pink: #e98074;
+    --black: #222;
+    --black2: #555;
+    --black3: #252525;
+    --black4: #000;
+    --black5: #212529;
+    --orange: #eb0028;
+    --white: #fff;
+    --grey: #959595;
+    --grey2: #666;
+    --grey3: #ccc;
+    --yellow: #e9bb74;
+    --blue: #74a3e9;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body, input, button {
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    color: var(--black);
+  }
+  
+  a {
+    text-decoration: none;
+    color: navy;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  h1 {
+    color: var(--pink);
+  }
+  
+  h3, h4 {
+    font-weight: 500;
+  }
+  
+  svg {
+    fill: var(--pink);
+    height: 20px;
+    width: 20px;
+  }
